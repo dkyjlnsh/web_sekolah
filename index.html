@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMKN 1 Binong — Sekolah Menengah Kejuruan</title>
+  <meta name="description" content="Website resmi SMKN 1 Binong (STARBIN), Kabupaten Subang. Informasi profil sekolah, 6 kompetensi keahlian, mitra industri, dan pendaftaran PPDB.">
+  
+  <!-- LOGO DI TAB BROWSER (FAVICON) -->
+  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/member/2026-11-13-bd86ef61-c82c-4190-a94c-c898334d6e83.png">
+  <link rel="apple-touch-icon" href="https://cdn.phototourl.com/member/2026-11-13-bd86ef61-c82c-4190-a94c-c898334d6e83.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<header id="siteHeader">
+  <div class="navbar">
+    <a href="#home" class="brand">
+      <div class="brand-mark">
+        <img src="https://cdn.phototourl.com/member/2026-11-13-bd86ef61-c82c-4190-a94c-c898334d6e83.png" alt="Logo SMKN 1 Binong">
+      </div>
+      <div class="brand-text">
+        <div class="name">SMKN 1 Binong</div>
+        <div class="tag">Sekolah Kejuruan Unggul</div>
+      </div>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#profil" class="nav-link">Profil</a>
+      <a href="#jurusan" class="nav-link">Jurusan</a>
+      <a href="#kuis-jurusan" class="nav-link">Cari Jurusan</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+      <a href="#kontak" class="nav-link cta-link">Daftar Sekarang</a>
+    </nav>
+
+    <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="blueprint-bg"></div>
+  <div class="hero-inner container">
+    <div class="eyebrow">STARBIN (Sekolah Ketarunaan Binong)</div>
+    <h1>Merakit Keterampilan &amp;<br>Membangun <span class="accent">Masa Depan.</span></h1>
+    <p class="lede">SMKN 1 Binong mendidik generasi siap kerja dan siap wirausaha dengan fasilitas praktik modern serta tenaga pengajar berpengalaman di bidangnya.</p>
+    <div class="hero-actions">
+      <a href="#profil" class="btn btn-primary">Jelajahi Sekolah <span class="btn-arrow">→</span></a>
+      <a href="#jurusan" class="btn btn-ghost">Lihat Jurusan</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num count-up" data-target="500">0</div><div class="label">Siswa Aktif</div></div>
+      <div class="stat"><div class="num count-up" data-target="6">0</div><div class="label">Kompetensi Keahlian</div></div>
+      <div class="stat"><div class="num"><span class="count-up" data-target="85">0</span>%</div><div class="label">Lulusan Terserap Kerja</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEKSI LOGO MITRA INDUSTRI (DUDI) ================= -->
+<section id="mitra" class="section-mitra">
+  <div class="container">
+    <div class="mitra-head">
+      <h3>Bekerja Sama Dengan Dunia Usaha &amp; Industri (DUDI)</h3>
+    </div>
+    <div class="logo-slider">
+      <div class="logo-slide-track">
+        <div class="logo-item">BANK BJB</div>
+        <div class="logo-item">FAVEHOTEL</div>
+        <div class="logo-item">PT. INOVINDO DIGITAL MEDIA</div>
+        <div class="logo-item">BANK BRI</div>
+        <div class="logo-item">PT. GOTHRU MEDIA INDONESIA</div>
+        <div class="logo-item">PT. PLN</div>
+        <!-- Duplikasi logo agar putaran tidak putus -->
+        <div class="logo-item">BANK BJB</div>
+        <div class="logo-item">FAVEHOTEL</div>
+        <div class="logo-item">PT. INOVINDO DIGITAL MEDIA</div>
+        <div class="logo-item">BANK BRI</div>
+        <div class="logo-item">PT. GOTHRU MEDIA INDONESIA</div>
+        <div class="logo-item">PT. PLN</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profil">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-dark">Tentang Kami</span>
+      <h2>Visi &amp; Misi Sekolah</h2>
+      <p>Landasan yang mengarahkan setiap proses belajar-mengajar dan praktik keahlian di SMKN 1 Binong.</p>
+    </div>
+
+    <div class="profil-grid">
+      <div class="profil-card reveal">
+        <div class="icon-tag">V</div>
+        <h3>Visi</h3>
+        <p>Menjadi lembaga pendidikan kejuruan unggul yang menghasilkan lulusan kompeten, berkarakter, mandiri, dan berdaya saing tinggi di tingkat nasional maupun global.</p>
+      </div>
+
+      <div class="profil-card alt reveal">
+        <div class="icon-tag">M</div>
+        <h3>Misi</h3>
+        <ul class="misi-list">
+          <li><span class="idx">01</span> Menyelenggarakan pembelajaran berbasis kompetensi dan dunia industri.</li>
+          <li><span class="idx">02</span> Membentuk karakter disiplin, jujur, dan etos kerja tinggi.</li>
+          <li><span class="idx">03</span> Menjalin kemitraan aktif dengan dunia usaha dan industri (DUDI).</li>
+          <li><span class="idx">04</span> Mendorong inovasi, kreativitas, dan jiwa kewirausahaan siswa.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEKSI KEUNGGULAN UTAMA ================= -->
+<section id="keunggulan" class="section-keunggulan">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-dark">Mengapa Starbin</span>
+      <h2>Keunggulan SMKN 1 Binong</h2>
+      <p>Komitmen kami dalam membentuk lulusan yang siap bersaing secara global melalui sistem pendidikan terpadu.</p>
+    </div>
+    
+    <div class="keunggulan-grid">
+      <div class="k-card reveal">
+        <div class="k-badge">01</div>
+        <h4>Pendidikan Ketarunaan</h4>
+        <p>Menerapkan basis ketarunaan untuk membentuk kedisiplinan tingkat tinggi, fisik prima, dan mental tangguh siap industri.</p>
+      </div>
+      <div class="k-card reveal">
+        <div class="k-badge">02</div>
+        <h4>Kurikulum Berbasis Industri</h4>
+        <p>Materi pembelajaran diselaraskan langsung dengan kebutuhan dunia bisnis masa kini agar materi praktik selalu relevan.</p>
+      </div>
+      <div class="k-card reveal">
+        <div class="k-badge">03</div>
+        <h4>Fasilitas Bengkel &amp; Lab Modern</h4>
+        <p>Setiap program keahlian ditunjang dengan ruang praktik kerja komparatif yang lengkap sesuai standar operasional perusahaan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jurusan">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-dark">Kompetensi Keahlian</span>
+      <h2>Jurusan Pilihan</h2>
+      <p>Enam program keahlian yang dirancang mengikuti kebutuhan industri terkini.</p>
+    </div>
+
+    <div class="jurusan-grid">
+      <div class="jur-card reveal">
+        <div class="jur-code">PPLG · 01</div>
+        <div class="jur-icon"><i data-lucide="monitor"></i></div>
+        <h3>Pengembangan Perangkat Lunak &amp; Gim</h3>
+        <p>Mempelajari pemrograman web, pembuatan aplikasi mobile, pengembangan gim, serta rekayasa perangkat lunak modern.</p>
+      </div>
+
+      <div class="jur-card reveal">
+        <div class="jur-code">AKL · 02</div>
+        <div class="jur-icon"><i data-lucide="dollar-sign"></i></div>
+        <h3>Akuntansi &amp; Keuangan Lembaga</h3>
+        <p>Pengelolaan laporan keuangan, perpajakan, dan sistem akuntansi digital instansi.</p>
+      </div>
+
+      <div class="jur-card reveal">
+        <div class="jur-code">TBSM · 03</div>
+        <div class="jur-icon"><i data-lucide="settings"></i></div>
+        <h3>Teknik Bisnis Sepeda Motor</h3>
+        <p>Perawatan, perbaikan, dan diagnosa mesin sepeda motor konvensional &amp; injeksi.</p>
+      </div>
+
+      <div class="jur-card reveal">
+        <div class="jur-code">MPLB · 04</div>
+        <div class="jur-icon"><i data-lucide="briefcase"></i></div>
+        <h3>Manajemen Perkantoran &amp; Layanan Bisnis</h3>
+        <p>Manajemen administrasi, kearsipan digital, dan korespondensi bisnis modern.</p>
+      </div>
+
+      <div class="jur-card reveal">
+        <div class="jur-code">ATPH · 05</div>
+        <div class="jur-icon"><i data-lucide="leaf"></i></div>
+        <h3>Agribisnis Tanaman Pangan &amp; Hortikultura</h3>
+        <p>Mempelajari dasar budidaya tanaman, pengelolaan lahan tani, serta teknik pembibitan pertanian modern.</p>
+      </div>
+
+      <div class="jur-card reveal">
+        <div class="jur-code">TEI · 06</div>
+        <div class="jur-icon"><i data-lucide="zap"></i></div>
+        <h3>Teknik Elektronika Industri</h3>
+        <p>Pengenalan dasar komponen elektronika, perakitan sirkuit kontrol, serta pemeliharaan sistem digital industri.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERACTIVE QUIZ JURUSAN ================= -->
+<section id="kuis-jurusan" class="section-quiz">
+  <div class="blueprint-bg blueprint-subtle"></div>
+  <div class="container container-narrow">
+    <div class="section-head section-head-center reveal">
+      <span class="eyebrow-dark eyebrow-light"> Smart System Finder</span>
+      <h2 class="text-white">Bingung Pilih Jurusan?</h2>
+      <p class="text-white-muted">Ikuti kuis rekomendasi berbasis minat ini untuk menemukan kompetensi keahlian terbaikmu di Starbin!</p>
+    </div>
+
+    <div class="quiz-box reveal" id="quizBox">
+      <div class="quiz-step active" id="quizStartView">
+        <div class="quiz-center">
+          <div class="quiz-emoji">🎯</div>
+          <h3>Temukan Passion Teknis Kamu</h3>
+          <p class="quiz-sub">Hanya butuh waktu kurang dari 1 menit untuk menganalisis kecocokan karir masa depanmu.</p>
+          <button type="button" class="btn btn-primary" id="startQuizBtn">Mulai Analisis Minat <span class="btn-arrow">→</span></button>
+        </div>
+      </div>
+
+      <div class="quiz-step" id="quizQuestionView">
+        <div class="quiz-progress-wrapper">
+          <span class="mono" id="quizStepIndicator">Soal 1 dari 4</span>
+          <div class="quiz-progress-track"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+        </div>
+        <h3 id="quizQuestionText" class="quiz-q-title">Pertanyaan akan muncul di sini...</h3>
+        <div class="quiz-options" id="quizOptionsContainer"></div>
+      </div>
+
+      <div class="quiz-step" id="quizResultView">
+        <div class="quiz-center">
+          <div class="k-badge badge-dark">Hasil Analisis Sistem</div>
+          <h3 class="quiz-res-title" id="resultTitle">Nama Jurusan</h3>
+          <p id="resultDesc" class="quiz-sub">Deskripsi hasil kecocokan kuis...</p>
+          <div class="quiz-res-actions">
+            <button type="button" class="btn btn-primary" id="resetQuizBtn">Ulangi Kuis</button>
+            <a href="#kontak" class="btn btn-ghost" id="quizCtaLink">Daftar Jurusan Ini</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEKSI FAQ ================= -->
+<section id="faq" class="section-faq">
+  <div class="container container-narrow">
+    <div class="section-head section-head-center reveal">
+      <span class="eyebrow-dark">Bantuan</span>
+      <h2>Pertanyaan Umum (FAQ)</h2>
+      <p>Informasi cepat seputar pendaftaran dan kegiatan belajar di SMKN 1 Binong.</p>
+    </div>
+
+    <div class="faq-container reveal">
+      <div class="faq-item">
+        <button type="button" class="faq-question">Kapan pendaftaran siswa baru (PPDB) dibuka? <span class="faq-arrow">+</span></button>
+        <div class="faq-answer">
+          <p>Pendaftaran biasanya dibuka dalam 2–3 gelombang mulai bulan Mei hingga Juli setiap tahunnya. Informasi resmi tanggal pelaksanaan akan diupdate berkala di halaman utama website.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-question">Apakah siswa PPLG mendapatkan fasilitas laptop dari sekolah? <span class="faq-arrow">+</span></button>
+        <div class="faq-answer">
+          <p>Sekolah menyediakan fasilitas Lab Komputer modern dengan spesifikasi tinggi yang dapat digunakan selama jam pelajaran. Namun, siswa sangat disarankan memiliki perangkat mandiri untuk belajar di rumah.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button type="button" class="faq-question">Bagaimana dengan penyaluran kerja bagi lulusan? <span class="faq-arrow">+</span></button>
+        <div class="faq-answer">
+          <p>Melalui BKK (Bursa Kerja Khusus) SMKN 1 Binong, kami bekerja sama dengan puluhan perusahaan nasional untuk menyelenggarakan rekrutmen langsung sebelum siswa dinyatakan lulus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="blueprint-bg blueprint-medium"></div>
+  <div class="container container-rel">
+    <div class="section-head reveal">
+      <span class="eyebrow-dark">Hubungi Kami</span>
+      <h2>Kontak &amp; Lokasi</h2>
+      <p>Ada pertanyaan seputar pendaftaran atau program keahlian? Kirimkan pesan kepada kami.</p>
+    </div>
+
+    <div class="kontak-grid">
+      <form class="reveal" id="contactForm">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" placeholder="nama@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" placeholder="Tulis pertanyaan atau pesan Anda di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan <span class="btn-arrow">→</span></button>
+        <div class="form-msg" id="formMsg">✓ Pesan Anda telah terkirim. Terima kasih!</div>
+      </form>
+
+      <div class="reveal">
+        <div class="info-block">
+          <div class="label">Alamat</div>
+          <div class="value">Jl. Raya Binong No. 64, Belakang Polsek, Binong, Kabupaten Subang, Jawa Barat 41253</div>
+        </div>
+        <div class="info-block">
+          <div class="label">Telepon</div>
+          <div class="value">(0260) 453392</div>
+        </div>
+        <div class="info-block">
+          <div class="label">Email</div>
+          <div class="value">info@smkn1binong.sch.id</div>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=SMKN%201%20Binong,%20Jl.%20Raya%20Binong%20No.%2064,%20Subang&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Peta Lokasi SMKN 1 Binong">
+          </iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=SMKN+1+Binong+Jl.+Raya+Binong+No.+64+Subang" target="_blank" rel="noopener noreferrer" class="map-direct-link">
+          Buka Rute di Google Maps ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOMBOL WHATSAPP MELAYANG -->
+<a href="https://wa.me/6281234567890?text=Halo%20Admin%20SMKN%201%20Binong,%20saya%20ingin%20tanya%20seputar%20PPDB" class="wa-floating" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Admin SMKN 1 Binong">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.66.986 3.288 1.488 4.636 1.492 4.887 0 9.243-4.14 9.247-9.253.002-2.522-.979-4.894-2.763-6.68C15.926 2.926 13.558 1.943 11.037 1.94 5.923 1.94 2.1 6.136 2.1 11.023c0 1.442.41 2.822 1.298 4.095L2.366 19.83l4.281-1.123z"/>
+  </svg>
+</a>
+
+<footer>
+  <div class="container footer-row">
+    <div>© 2026 SMKN 1 Binong. Seluruh hak cipta dilindungi.</div>
+    <div class="mono">Terakreditasi A · Kabupaten Subang</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
