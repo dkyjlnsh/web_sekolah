@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function smoothScrollTo(targetId) {
     const target = document.querySelector(targetId);
     if (target) {
-      const offset = 70;
+      const offset = 72;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: "smooth" });
     }
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           const target = +entry.target.getAttribute("data-target");
           const countProgress = () => {
-            const current = +entry.target.innerText.replace("%", "");
+            const current = +entry.target.innerText.replace(/\D/g, "");
             const increment = Math.max(1, Math.ceil(target / 40));
             if (current < target) {
               entry.target.innerText = Math.min(target, current + increment);
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       question: "Bagaimana cara kamu menyelesaikan suatu masalah teknis?",
       options: [
-        { text: "Mencari logika/algoritma yang salah dalam susunan kode.", score: "pplg" },
+        { text: "Mencari logika atau algoritma yang salah dalam susunan kode.", score: "pplg" },
         { text: "Menganalisis sistem kelistrikan & merakit sirkuit kontrol otomatis.", score: "tei" },
         { text: "Meneliti kondisi tanah, nutrisi tanaman, serta sistem pengairan.", score: "atph" },
         { text: "Menyusun strategi alur kerja kantor secara rapi dan sistematis.", score: "mplb" }
       ]
     },
     {
-      question: "Jika diberi project bebas, kamu lebih memilih untuk membuat...",
+      question: "Jika diberi proyek bebas, kamu lebih memilih untuk membuat...",
       options: [
         { text: "Sistem otomasi pabrik pintar atau robotik mandiri.", score: "tei" },
         { text: "Kebun hidroponik modern berbasis agribisnis berkelanjutan.", score: "atph" },

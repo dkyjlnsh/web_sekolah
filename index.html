@@ -7,12 +7,12 @@
   <meta name="description" content="Website resmi SMKN 1 Binong (STARBIN), Kabupaten Subang. Informasi profil sekolah, 6 kompetensi keahlian, mitra industri, dan pendaftaran PPDB.">
   
   <!-- LOGO DI TAB BROWSER (FAVICON) -->
-  <link rel="icon" type="image/png" href="https://cdn.phototourl.com/anon/2026-11-20-6de8ce99-a354-43be-b4a8-726cd243d1fa.png">
-  <link rel="apple-touch-icon" href="https://cdn.phototourl.com/anon/2026-11-20-6de8ce99-a354-43be-b4a8-726cd243d1fa.png">
+  <link rel="icon" type="image/png" href="assets/logo.jpg.png">
+  <link rel="apple-touch-icon" href="assets/logo.jpg.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -25,15 +25,15 @@
   <div class="navbar">
     <a href="#home" class="brand">
       <div class="brand-mark">
-        <img src="https://cdn.phototourl.com/member/2026-11-13-bd86ef61-c82c-4190-a94c-c898334d6e83.png" alt="Logo SMKN 1 Binong">
+        <img src="aset/logo.png" onerror="this.onerror=null;this.src='https://cdn.phototourl.com/member/2026-11-13-bd86ef61-c82c-4190-a94c-c898334d6e83.png';" alt="Logo SMKN 1 Binong">
       </div>
       <div class="brand-text">
-        <div class="name">SMKN 1 Binong</div>
-        <div class="tag">Sekolah Kejuruan Unggul</div>
+        <span class="name">SMKN 1 Binong</span>
+        <span class="tag">Sekolah Kejuruan Unggul</span>
       </div>
     </a>
 
-    <nav class="nav-menu" id="navMenu">
+    <nav class="nav-menu" id="navMenu" aria-label="Navigasi Utama">
       <a href="#home" class="nav-link">Home</a>
       <a href="#profil" class="nav-link">Profil</a>
       <a href="#jurusan" class="nav-link">Jurusan</a>
@@ -60,9 +60,18 @@
       <a href="#jurusan" class="btn btn-ghost">Lihat Jurusan</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="num count-up" data-target="500">0</div><div class="label">Siswa Aktif</div></div>
-      <div class="stat"><div class="num count-up" data-target="6">0</div><div class="label">Kompetensi Keahlian</div></div>
-      <div class="stat"><div class="num"><span class="count-up" data-target="85">0</span>%</div><div class="label">Lulusan Terserap Kerja</div></div>
+      <div class="stat">
+        <div class="num"><span class="count-up" data-target="500">0</span>+</div>
+        <div class="label">Siswa Aktif</div>
+      </div>
+      <div class="stat">
+        <div class="num count-up" data-target="6">0</div>
+        <div class="label">Kompetensi Keahlian</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="count-up" data-target="85">0</span>%</div>
+        <div class="label">Lulusan Terserap Kerja</div>
+      </div>
     </div>
   </div>
 </section>
@@ -71,6 +80,7 @@
 <section id="mitra" class="section-mitra">
   <div class="container">
     <div class="mitra-head">
+      <span class="eyebrow-dark">Jejaring Industri</span>
       <h3>Bekerja Sama Dengan Dunia Usaha &amp; Industri (DUDI)</h3>
     </div>
     <div class="logo-slider">
@@ -82,12 +92,12 @@
         <div class="logo-item">PT. GOTHRU MEDIA INDONESIA</div>
         <div class="logo-item">PT. PLN</div>
         <!-- Duplikasi logo agar putaran tidak putus -->
-        <div class="logo-item">BANK BJB</div>
-        <div class="logo-item">FAVEHOTEL</div>
-        <div class="logo-item">PT. INOVINDO DIGITAL MEDIA</div>
-        <div class="logo-item">BANK BRI</div>
-        <div class="logo-item">PT. GOTHRU MEDIA INDONESIA</div>
-        <div class="logo-item">PT. PLN</div>
+        <div class="logo-item" aria-hidden="true">BANK BJB</div>
+        <div class="logo-item" aria-hidden="true">FAVEHOTEL</div>
+        <div class="logo-item" aria-hidden="true">PT. INOVINDO DIGITAL MEDIA</div>
+        <div class="logo-item" aria-hidden="true">BANK BRI</div>
+        <div class="logo-item" aria-hidden="true">PT. GOTHRU MEDIA INDONESIA</div>
+        <div class="logo-item" aria-hidden="true">PT. PLN</div>
       </div>
     </div>
   </div>
@@ -112,10 +122,10 @@
         <div class="icon-tag">M</div>
         <h3>Misi</h3>
         <ul class="misi-list">
-          <li><span class="idx">01</span> Menyelenggarakan pembelajaran berbasis kompetensi dan dunia industri.</li>
-          <li><span class="idx">02</span> Membentuk karakter disiplin, jujur, dan etos kerja tinggi.</li>
-          <li><span class="idx">03</span> Menjalin kemitraan aktif dengan dunia usaha dan industri (DUDI).</li>
-          <li><span class="idx">04</span> Mendorong inovasi, kreativitas, dan jiwa kewirausahaan siswa.</li>
+          <li><span class="idx">01</span><span>Menyelenggarakan pembelajaran berbasis kompetensi dan dunia industri.</span></li>
+          <li><span class="idx">02</span><span>Membentuk karakter disiplin, jujur, dan etos kerja tinggi.</span></li>
+          <li><span class="idx">03</span><span>Menjalin kemitraan aktif dengan dunia usaha dan industri (DUDI).</span></li>
+          <li><span class="idx">04</span><span>Mendorong inovasi, kreativitas, dan jiwa kewirausahaan siswa.</span></li>
         </ul>
       </div>
     </div>
@@ -134,17 +144,17 @@
     <div class="keunggulan-grid">
       <div class="k-card reveal">
         <div class="k-badge">01</div>
-        <h4>Pendidikan Ketarunaan</h4>
+        <h3>Pendidikan Ketarunaan</h3>
         <p>Menerapkan basis ketarunaan untuk membentuk kedisiplinan tingkat tinggi, fisik prima, dan mental tangguh siap industri.</p>
       </div>
       <div class="k-card reveal">
         <div class="k-badge">02</div>
-        <h4>Kurikulum Berbasis Industri</h4>
+        <h3>Kurikulum Berbasis Industri</h3>
         <p>Materi pembelajaran diselaraskan langsung dengan kebutuhan dunia bisnis masa kini agar materi praktik selalu relevan.</p>
       </div>
       <div class="k-card reveal">
         <div class="k-badge">03</div>
-        <h4>Fasilitas Bengkel &amp; Lab Modern</h4>
+        <h3>Fasilitas Bengkel &amp; Lab Modern</h3>
         <p>Setiap program keahlian ditunjang dengan ruang praktik kerja komparatif yang lengkap sesuai standar operasional perusahaan.</p>
       </div>
     </div>
@@ -210,7 +220,7 @@
   <div class="blueprint-bg blueprint-subtle"></div>
   <div class="container container-narrow">
     <div class="section-head section-head-center reveal">
-      <span class="eyebrow-dark eyebrow-light"> Smart System Finder</span>
+      <span class="eyebrow-dark eyebrow-light">Smart System Finder</span>
       <h2 class="text-white">Bingung Pilih Jurusan?</h2>
       <p class="text-white-muted">Ikuti kuis rekomendasi berbasis minat ini untuk menemukan kompetensi keahlian terbaikmu di Starbin!</p>
     </div>
